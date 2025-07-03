@@ -9,175 +9,36 @@
   <!-- Bootstrap CSS & Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <style>
-    html {
-      scroll-behavior: smooth;
-      scroll-padding-top: 80px;
-    }
-
-    body {
-      padding-top: 70px;
-    }
-body {
-  margin: 0;
-  padding: 0;
-}
-    .navbar-brand {
-      font-size: 1.25rem;
-      /* Smaller for better fitting */
-      white-space: nowrap;
-    }
-
-    .nav-link {
-      font-size: 0.95rem;
-      padding-left: 0.6rem;
-      padding-right: 0.6rem;
-    }
-
-    .social-icons a {
-      font-size: 1.1rem;
-    }
-
-    @media (max-width: 991.98px) {
-      .nav-link {
-        font-size: 1rem;
-      }
-    }
-
-
-
-
-
-
-    .navbar-brand-button {
-      font-size: 1.25rem;
-      /* Adjust size as needed */
-    }
-
-
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(to right, #f44336, #e53935);
-      color: white;
-      padding: 100px 20px;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3.5rem;
-      /* Increased font size */
-      font-weight: 700;
-    }
-
-    .hero p {
-      font-size: 1.5rem;
-    }
-
-    .cta-button {
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: white;
-      color: #f44336;
-      font-weight: 700;
-      border: none;
-      border-radius: 50px;
-      transition: all 0.3s ease;
-    }
-
-    .cta-button:hover {
-      background-color: #ffcdd2;
-      transform: scale(1.05);
-    }
-
-    /* Feature Cards */
-    .feature-card {
-      background: white;
-      padding: 30px;
-      border-radius: 10px;
-      margin-bottom: 30px;
-      text-align: center;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .feature-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    .feature-icon {
-      font-size: 3rem;
-      color: #f44336;
-      margin-bottom: 15px;
-    }
-
-    .feature-title {
-      font-size: 1.75rem;
-      /* Increased header font size */
-      font-weight: 700;
-      margin-bottom: 15px;
-      color: #dc3545;
-      /* Bootstrap danger color for consistency */
-    }
-
-    .feature-desc {
-      font-size: 1.1rem;
-      color: #555;
-    }
-
-    /* Gallery */
-    .gallery img {
-      border-radius: 10px;
-      width: 100%;
-      height: auto;
-      transition: transform 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Footer */
-    footer {
-      background-color: #343a40;
-      color: white;
-      text-align: center;
-      padding: 20px 0;
-    }
-
-    footer a {
-      color: #ffc107;
-      text-decoration: none;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
+  <!-- Navigation Bar -->
+
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
     <div class="container-fluid px-3">
+
+      <!-- Logo + Brand -->
       <a class="navbar-brand fw-bold me-3 d-flex align-items-center" href="#">
-        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2"> <!-- adjust width/height -->
-        S N Construction
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2">
+        S N Construction Company
       </a>
 
+      <!-- Toggler for mobile -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
+      <!-- Navbar links and social icons -->
       <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
         <div class="d-flex w-100 justify-content-between align-items-center flex-wrap flex-lg-nowrap">
 
+          <!-- Navigation Links -->
           <ul class="navbar-nav flex-row flex-wrap me-auto">
             <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
@@ -186,68 +47,103 @@ body {
             <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
           </ul>
 
+          <!-- Social Icons -->
           <div class="d-flex align-items-center gap-2 social-icons">
-            <a href="https://www.facebook.com/share/1AmAaBJFzn/" target="_blank" class="text-white">
-              <i class="bi bi-facebook"></i>
-            </a>
-            <a href="https://www.instagram.com/s.n._construction_interior/" target="_blank" class="text-white">
-              <i class="bi bi-instagram"></i>
-            </a>
+            <a href="https://www.facebook.com/share/1AmAaBJFzn/" target="_blank" class="text-white"><i
+                class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/s.n._construction_interior/" target="_blank" class="text-white"><i
+                class="bi bi-instagram"></i></a>
             <a href="https://www.linkedin.com/company/s-n-construction-interior-company/" target="_blank"
-              class="text-white">
-              <i class="bi bi-linkedin"></i>
-            </a>
-            <a href="https://wa.me/919140929007" target="_blank" class="text-white">
-              <i class="bi bi-whatsapp"></i>
-            </a>
+              class="text-white"><i class="bi bi-linkedin"></i></a>
+            <a href="https://wa.me/919140929007" target="_blank" class="text-white"><i class="bi bi-whatsapp"></i></a>
           </div>
 
         </div>
       </div>
     </div>
   </nav>
-
+  <!-- Nav bar  Section  end -->
 
   <!-- Hero Section -->
   <section class="hero" id="home">
-    <div class="container">
-      <h1>Building Your Vision, Creating Your Future</h1>
-      <p class="lead">Top-tier construction services with excellence, reliability, and innovation.</p>
+    <div class="container text-center py-5">
+      <h1 class="mb-3">Building Your Vision, Creating Your Future</h1>
+      <p class="lead mb-4">Top-tier construction services with excellence, reliability, and innovation.</p>
       <a href="#contact" class="btn cta-button">Get a Quote</a>
     </div>
   </section>
+
+  <!-- Hero Section end -->
 
   <!-- Services Section -->
   <section class="features py-5" id="services">
     <div class="container">
       <h2 class="text-center mb-5 feature-title">Our Services</h2>
       <div class="row">
+
+        <!-- Residential Construction -->
         <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon"><i class="bi bi-house-door-fill"></i></div>
+          <div class="feature-card text-center">
+            <div class="feature-icon">
+              <i class="bi bi-house-door-fill"></i>
+            </div>
             <h3 class="feature-title">Residential Construction</h3>
-            <p class="feature-desc">We build comfortable, modern homes tailored to your lifestyle and needs with expert
-              craftsmanship.</p>
+            <p class="feature-desc">
+              At S N Construction Company, we specialize in building modern, elegant, and durable homes tailored to your
+              family’s lifestyle and aspirations. Our residential construction services include everything from new
+              builds to extensions and layout redesigns, ensuring your space feels both functional and luxurious. We use
+              high-quality materials, innovative designs, and expert project management to deliver homes that exceed
+              expectations. Our team collaborates closely with clients, architects, and designers to integrate your
+              ideas seamlessly into the construction process. Whether it’s a villa, duplex, or traditional family home,
+              we guarantee timely delivery and strict quality control. Choose us to build a beautiful, sustainable home
+              that reflects your vision and enhances your life for years to come.
+            </p>
           </div>
         </div>
+
+        <!-- Commercial Buildings -->
         <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon"><i class="bi bi-building"></i></div>
+          <div class="feature-card text-center">
+            <div class="feature-icon">
+              <i class="bi bi-building"></i>
+            </div>
             <h3 class="feature-title">Commercial Buildings</h3>
-            <p class="feature-desc">Delivering high-quality commercial spaces with superior design and sustainable
-              solutions.</p>
+            <p class="feature-desc">
+              S N Construction Company delivers superior commercial construction services, creating workspaces and
+              commercial facilities that foster productivity and brand growth. We build modern office complexes, retail
+              stores, warehouses, and institutional buildings that combine practical design with aesthetic appeal. Our
+              team ensures each project aligns with your operational needs, industry standards, and budget. From
+              planning and approvals to construction and finishing, we guarantee timely completion with minimal
+              disruption to your business operations. We integrate innovative technologies, smart infrastructure, and
+              sustainable building practices, creating commercial spaces that are efficient, professional, and
+              future-ready for your success.
+            </p>
           </div>
         </div>
+
+        <!-- Renovations & Remodeling -->
         <div class="col-md-4">
-          <div class="feature-card">
-            <div class="feature-icon"><i class="bi bi-tools"></i></div>
+          <div class="feature-card text-center">
+            <div class="feature-icon">
+              <i class="bi bi-tools"></i>
+            </div>
             <h3 class="feature-title">Renovations & Remodeling</h3>
-            <p class="feature-desc">Transforming existing spaces with precise remodeling and innovative upgrades.</p>
+            <p class="feature-desc">
+              Transform your spaces with our expert renovations and remodeling services. At S N Construction Company, we
+              enhance the functionality, aesthetics, and value of homes, offices, and commercial properties with
+              tailored solutions. Whether updating your kitchen, redesigning interiors, or remodeling an entire floor,
+              our team ensures smooth execution with minimal disruption. We focus on quality craftsmanship, modern
+              design trends, and sustainable materials to achieve long-lasting results. Our process includes detailed
+              assessments, customized planning, and efficient project management to deliver inspiring transformations
+              that reflect your evolving needs and elevate your property’s appeal and market value.
+            </p>
           </div>
         </div>
+
       </div>
     </div>
   </section>
+
 
   <!-- About Section -->
   <section class="features py-5 bg-light" id="about">
@@ -255,24 +151,43 @@ body {
       <h2 class="text-center mb-5 feature-title">About Us</h2>
 
       <div class="row">
+        <!-- Our Mission -->
         <div class="col-md-6">
           <div class="feature-card">
             <h3 class="feature-title">Our Mission</h3>
             <p class="feature-desc">
-              To provide our clients with superior construction services that exceed expectations through quality,
-              safety, and integrity.
+              At S N Construction Company, our mission is to provide clients with superior construction services that
+              exceed expectations through unmatched quality, safety, and integrity. We are committed to building homes,
+              commercial buildings, and infrastructure projects that stand the test of time. Our mission extends beyond
+              constructing buildings – we aim to create strong relationships with our clients, understanding their
+              unique visions and delivering results that enhance their lives and businesses. We focus on innovation,
+              sustainability, and customer satisfaction in every project, ensuring timely delivery and
+              cost-effectiveness while maintaining the highest standards of workmanship and professionalism. Our mission
+              is to contribute to the growth of India’s construction industry by building structures that inspire trust,
+              confidence, and pride.
             </p>
           </div>
         </div>
+
+        <!-- Our Values -->
         <div class="col-md-6">
           <div class="feature-card">
             <h3 class="feature-title">Our Values</h3>
             <p class="feature-desc">
-              Commitment to Excellence, Innovation, Customer Satisfaction, and Sustainable Practices.
+              Our core values define who we are as a top construction company in Noida, Delhi NCR, and North India. We
+              uphold a strong <strong>Commitment to Excellence</strong>, ensuring every project is executed with
+              precision, quality, and attention to detail. We embrace <strong>Innovation</strong> by integrating modern
+              construction technologies, sustainable building materials, and efficient design practices to deliver
+              future-ready projects. <strong>Customer Satisfaction</strong> is at the heart of our services – we listen,
+              plan, and build in line with each client’s goals and budget. Lastly, we believe in <strong>Sustainable
+                Practices</strong> by promoting eco-friendly construction solutions that reduce environmental impact.
+              Our values guide every decision we make, building a reputation for integrity, transparency, and
+              reliability in the construction industry.
             </p>
           </div>
         </div>
       </div>
+
 
       <div class="mt-5">
         <div class="feature-card">
@@ -426,74 +341,91 @@ body {
     </div>
   </section>
 
-
-  <!-- Custom CSS -->
-  <style>
-    .contact-section a:hover {
-      color: #198754;
-      /* Bootstrap success */
-      text-decoration: underline;
-    }
-
-    .contact-section i {
-      font-size: 1.2rem;
-    }
-  </style>
-
   <!-- Bootstrap Icons CDN (Add in <head> if not present) -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- Custom CSS -->
-  <style>
-    .contact-section a:hover {
-      color: #198754;
-      /* Bootstrap success color */
-      text-decoration: underline;
-    }
+  <!-- Enhanced Footer -->
+  <footer class="bg-dark text-white pt-5 pb-4 mt-5">
+    <div class="container">
+      <div class="row text-center text-md-start">
 
-    .contact-section i {
-      font-size: 1.2rem;
-    }
-  </style>
+        <!-- Company Info -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold mb-3">S N Construction Company</h5>
+          <p>
+            Building your vision with excellence, quality, and reliability across Noida, Delhi, Gurugram, Lucknow, and
+            North India.
+          </p>
+          <p class="mb-1">
+            <i class="bi bi-envelope-fill text-warning me-2"></i>
+            <a href="mailto:snconstructions.contact@gmail.com" class="text-white text-decoration-underline">
+              snconstructions.contact@gmail.com
+            </a>
+          </p>
+          <p class="mb-0">
+            <i class="bi bi-telephone-fill text-warning me-2"></i>
+            <a href="tel:+919140929007" class="text-white text-decoration-underline">
+              +91 9140929007
+            </a>
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#gallery" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Developer Credit & Social -->
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase fw-bold mb-3">Developed By</h5>
+          <p class="mb-1">
+            <strong>Avtech Company</strong>
+          </p>
+          <p class="mb-1">
+            <i class="bi bi-envelope-fill text-warning me-2"></i>
+            <a href="mailto:artech.info7238@gmail.com" class="text-white text-decoration-underline">
+              artech.info7238@gmail.com
+            </a>
+          </p>
 
 
-  <!-- Footer -->
-  <footer class="bg-dark text-white py-4 mt-5">
-    <div class="container text-center">
-      <p class="mb-0">&copy; 2020 <strong>S N Construction Company</strong>. All rights reserved.</p>
-      <p class="mb-0">Contact: <a href="mailto:info@snconstructs.com"
-          class="text-white text-decoration-underline">snconstructions.contact@gmail.com</a></p>
+        </div>
+
+      </div>
+
+      <!-- Copyright and Policy -->
+      <hr class="border-light" />
+      <div class="text-center">
+        <p class="mb-0">
+          &copy; 2020 - <span id="currentYear"></span> <strong>S N Construction Company</strong>. All rights reserved.
+        </p>
+        <p class="mb-0">
+          <a href="#privacy" class="text-white text-decoration-underline">Privacy Policy</a> |
+          <a href="#terms" class="text-white text-decoration-underline">Terms of Service</a>
+        </p>
+      </div>
     </div>
   </footer>
+
+  <!-- JS to auto-update year -->
+  <script>
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
 
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <script>
-    // Optional: Change toggle button text when About More is collapsed or shown
-    const toggleBtn = document.getElementById('toggleBtn');
-    const aboutMore = document.getElementById('aboutMore');
 
-    aboutMore.addEventListener('shown.bs.collapse', () => {
-      toggleBtn.textContent = 'Show Less';
-    });
+  <script src="js/script.js"> </script>
 
-    aboutMore.addEventListener('hidden.bs.collapse', () => {
-      toggleBtn.textContent = 'Show More';
-    });
-  </script>
-  <script>
-    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-      link.addEventListener('click', () => {
-        const navbarCollapse = document.querySelector('.navbar-collapse');
-        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-        if (bsCollapse) {
-          bsCollapse.hide();
-        }
-      });
-    });
-  </script>
 
 </body>
 
