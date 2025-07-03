@@ -1,85 +1,44 @@
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 80px;
-}
-
 body {
   margin: 0;
   padding: 0;
-  background-color: #f4faff; /* light sky blue background for freshness */
+  background-color: #f4f4f4; /* clean light grey */
   color: #333;
 }
 
 .navbar {
-  background: linear-gradient(to right, #0072ff, #00c6ff); /* vibrant blue gradient navbar */
+  background: #003DA5; /* deep professional blue */
 }
 
-.navbar-brand {
-  font-size: 1.25rem;
-  white-space: nowrap;
-}
-
-.navbar-brand-button {
-  font-size: 1.25rem;
-}
-
+.navbar-brand,
 .nav-link {
-  font-size: 0.95rem;
-  padding-left: 0.6rem;
-  padding-right: 0.6rem;
   color: #fff !important;
 }
 
 .nav-link:hover {
-  color: #b3e5fc !important; /* light blue hover for nav links */
+  color: #FFD100 !important; /* bright yellow hover for visibility */
 }
 
 .social-icons a {
-  font-size: 1.1rem;
   color: #fff !important;
 }
 
 .social-icons a:hover {
-  color: #b3e5fc !important;
-}
-
-@media (max-width: 991.98px) {
-  .nav-link {
-    font-size: 1rem;
-  }
-}
-
-.contact-section a:hover {
-  color: #0072ff;
-  text-decoration: underline;
-}
-
-.contact-section i {
-  font-size: 1.2rem;
+  color: #FFD100 !important;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #00c6ff, #0072ff); /* attractive blue gradient hero */
+  background: linear-gradient(to right, #003DA5, #0056b3); /* blue gradient hero */
   color: white;
   padding: 100px 20px;
   text-align: center;
 }
 
-.hero h1 {
-  font-size: 3.5rem;
-  font-weight: 700;
-}
-
-.hero p {
-  font-size: 1.5rem;
-}
-
 .cta-button {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #FFD700; /* bright yellow */
-  color: #333; /* dark text */
+  background-color: #FFD100; /* yellow CTA button for energy and focus */
+  color: #003366;
   font-weight: 700;
   border: none;
   border-radius: 50px;
@@ -87,13 +46,13 @@ body {
 }
 
 .cta-button:hover {
-  background-color: #FFC107; /* deeper yellow on hover */
+  background-color: #FF8C42; /* warm orange hover for creativity */
   transform: scale(1.05);
 }
 
 /* Feature Cards */
 .feature-card {
-  background: #ffffff;
+  background: #fff;
   padding: 30px;
   border-radius: 10px;
   margin-bottom: 30px;
@@ -109,7 +68,7 @@ body {
 
 .feature-icon {
   font-size: 3rem;
-  color: #0072ff; /* blue icon for consistency */
+  color: #003DA5; /* deep blue icons for consistency */
   margin-bottom: 15px;
 }
 
@@ -117,7 +76,7 @@ body {
   font-size: 1.75rem;
   font-weight: 700;
   margin-bottom: 15px;
-  color: #0072ff; /* blue titles for branding */
+  color: #003DA5; /* brand blue title */
 }
 
 .feature-desc {
@@ -125,11 +84,14 @@ body {
   color: #555;
 }
 
+
+
 /* Gallery */
 .gallery img {
   border-radius: 10px;
   width: 100%;
-  height: 150px;
+  max-width: 100%; /* ensures no overflow */
+  height: 200px; /* increased from 150px for better visual balance */
   object-fit: cover;
   transition: transform 0.3s ease;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -140,31 +102,84 @@ body {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
 
+/* Medium devices (tablets) */
 @media (min-width: 768px) {
   .gallery img {
-    height: 200px;
+    height: 250px; /* increased from 200px */
   }
 }
 
+/* Large devices (desktops) */
 @media (min-width: 992px) {
   .gallery img {
-    height: 250px;
+    height: 300px; /* increased from 250px */
   }
 }
+
+
+
+
+
 
 /* Footer */
 footer {
-  background: linear-gradient(to right, #0072ff, #00c6ff); /* matching footer blue gradient */
+  background: #003DA5; /* footer in brand blue for consistency */
   color: white;
   text-align: center;
   padding: 20px 0;
 }
 
 footer a {
-  color: #b3e5fc; /* light blue links for readability */
+  color: #FFD100; /* yellow links for visibility */
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+}
+
+
+
+
+
+/* Swiper Styles */
+
+
+/* Swiper Gallery Styles */
+.myGallery {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.myGallery .swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myGallery img {
+  border-radius: 10px;
+  width: 100%;
+  height: 200px; /* base height */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.myGallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 768px) {
+  .myGallery img {
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .myGallery img {
+    height: 300px;
+  }
 }
