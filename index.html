@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>S N Construction Company</title>
 
   <!-- Bootstrap CSS & Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
-  rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
 
   <style>
-  <style>
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 80px;
-  }
-
-  body {
-    padding-top: 70px;
-  }
-
-  .navbar-brand {
-    font-size: 1.25rem; /* Smaller for better fitting */
-    white-space: nowrap;
-  }
-
-  .nav-link {
-    font-size: 0.95rem;
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-  }
-
-  .social-icons a {
-    font-size: 1.1rem;
-  }
-
-  @media (max-width: 991.98px) {
-    .nav-link {
-      font-size: 1rem;
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 80px;
     }
-  }
 
-
-
-    
-
-	
-.navbar-brand-button {
-  font-size: 1.25rem; /* Adjust size as needed */
+    body {
+      padding-top: 70px;
+    }
+body {
+  margin: 0;
+  padding: 0;
 }
+    .navbar-brand {
+      font-size: 1.25rem;
+      /* Smaller for better fitting */
+      white-space: nowrap;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      padding-left: 0.6rem;
+      padding-right: 0.6rem;
+    }
+
+    .social-icons a {
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 991.98px) {
+      .nav-link {
+        font-size: 1rem;
+      }
+    }
+
+
+
+
+
+
+    .navbar-brand-button {
+      font-size: 1.25rem;
+      /* Adjust size as needed */
+    }
 
 
 
@@ -60,13 +64,17 @@
       padding: 100px 20px;
       text-align: center;
     }
+
     .hero h1 {
-      font-size: 3.5rem; /* Increased font size */
+      font-size: 3.5rem;
+      /* Increased font size */
       font-weight: 700;
     }
+
     .hero p {
       font-size: 1.5rem;
     }
+
     .cta-button {
       margin-top: 20px;
       padding: 12px 24px;
@@ -77,6 +85,7 @@
       border-radius: 50px;
       transition: all 0.3s ease;
     }
+
     .cta-button:hover {
       background-color: #ffcdd2;
       transform: scale(1.05);
@@ -89,24 +98,30 @@
       border-radius: 10px;
       margin-bottom: 30px;
       text-align: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .feature-card:hover {
       transform: translateY(-5px);
-      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
     }
+
     .feature-icon {
       font-size: 3rem;
       color: #f44336;
       margin-bottom: 15px;
     }
+
     .feature-title {
-      font-size: 1.75rem; /* Increased header font size */
+      font-size: 1.75rem;
+      /* Increased header font size */
       font-weight: 700;
       margin-bottom: 15px;
-      color: #dc3545; /* Bootstrap danger color for consistency */
+      color: #dc3545;
+      /* Bootstrap danger color for consistency */
     }
+
     .feature-desc {
       font-size: 1.1rem;
       color: #555;
@@ -118,11 +133,12 @@
       width: 100%;
       height: auto;
       transition: transform 0.3s ease;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
+
     .gallery img:hover {
       transform: scale(1.05);
-      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
     }
 
     /* Footer */
@@ -132,322 +148,353 @@
       text-align: center;
       padding: 20px 0;
     }
+
     footer a {
       color: #ffc107;
       text-decoration: none;
     }
+
     footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
+
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
-  <div class="container-fluid px-3">
-    <a class="navbar-brand fw-bold me-3" href="#">S N Construction</a>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
+    <div class="container-fluid px-3">
+      <a class="navbar-brand fw-bold me-3 d-flex align-items-center" href="#">
+        <img src="img/logo.png" alt="Logo" width="40" height="40" class="me-2"> <!-- adjust width/height -->
+        S N Construction
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-      data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-      aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
-      <div class="d-flex w-100 justify-content-between align-items-center flex-wrap flex-lg-nowrap">
-        
-        <ul class="navbar-nav flex-row flex-wrap me-auto">
-          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-        </ul>
+      <div class="collapse navbar-collapse flex-grow-1" id="navbarNav">
+        <div class="d-flex w-100 justify-content-between align-items-center flex-wrap flex-lg-nowrap">
 
-        <div class="d-flex align-items-center gap-2 social-icons">
-          <a href="https://www.facebook.com/share/1AmAaBJFzn/" target="_blank" class="text-white">
-            <i class="bi bi-facebook"></i>
-          </a>
-          <a href="https://www.instagram.com/s.n._construction_interior/" target="_blank" class="text-white">
-            <i class="bi bi-instagram"></i>
-          </a>
-          <a href="https://www.linkedin.com/company/s-n-construction-interior-company/" target="_blank" class="text-white">
-            <i class="bi bi-linkedin"></i>
-          </a>
-          <a href="https://wa.me/919140929007" target="_blank" class="text-white">
-            <i class="bi bi-whatsapp"></i>
-          </a>
-        </div>
+          <ul class="navbar-nav flex-row flex-wrap me-auto">
+            <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          </ul>
 
-      </div>
-    </div>
-  </div>
-</nav>
+          <div class="d-flex align-items-center gap-2 social-icons">
+            <a href="https://www.facebook.com/share/1AmAaBJFzn/" target="_blank" class="text-white">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/s.n._construction_interior/" target="_blank" class="text-white">
+              <i class="bi bi-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/s-n-construction-interior-company/" target="_blank"
+              class="text-white">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="https://wa.me/919140929007" target="_blank" class="text-white">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+          </div>
 
-
-<!-- Hero Section -->
-<section class="hero" id="home">
-  <div class="container">
-    <h1>Building Your Vision, Creating Your Future</h1>
-    <p class="lead">Top-tier construction services with excellence, reliability, and innovation.</p>
-    <a href="#contact" class="btn cta-button">Get a Quote</a>
-  </div>
-</section>
-
-<!-- Services Section -->
-<section class="features py-5" id="services">
-  <div class="container">
-    <h2 class="text-center mb-5 feature-title">Our Services</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="bi bi-house-door-fill"></i></div>
-          <h3 class="feature-title">Residential Construction</h3>
-          <p class="feature-desc">We build comfortable, modern homes tailored to your lifestyle and needs with expert craftsmanship.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="bi bi-building"></i></div>
-          <h3 class="feature-title">Commercial Buildings</h3>
-          <p class="feature-desc">Delivering high-quality commercial spaces with superior design and sustainable solutions.</p>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="feature-card">
-          <div class="feature-icon"><i class="bi bi-tools"></i></div>
-          <h3 class="feature-title">Renovations & Remodeling</h3>
-          <p class="feature-desc">Transforming existing spaces with precise remodeling and innovative upgrades.</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </nav>
 
-<!-- About Section -->
-<section class="features py-5 bg-light" id="about">
-  <div class="container">
-    <h2 class="text-center mb-5 feature-title">About Us</h2>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="feature-card">
-          <h3 class="feature-title">Our Mission</h3>
-          <p class="feature-desc">
-            To provide our clients with superior construction services that exceed expectations through quality, safety, and integrity.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="feature-card">
-          <h3 class="feature-title">Our Values</h3>
-          <p class="feature-desc">
-            Commitment to Excellence, Innovation, Customer Satisfaction, and Sustainable Practices.
-          </p>
-        </div>
-      </div>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1>Building Your Vision, Creating Your Future</h1>
+      <p class="lead">Top-tier construction services with excellence, reliability, and innovation.</p>
+      <a href="#contact" class="btn cta-button">Get a Quote</a>
     </div>
+  </section>
 
-    <div class="mt-5">
-      <div class="feature-card">
-        <h3 class="feature-title">Who we are?</h3>
-
-        <!-- Short Intro -->
-        <p class="feature-desc">
-          S N Construction Company Pvt. Ltd. is one of the top construction companies operating in Noida, Delhi, Gurugram (Gurgaon), Lucknow, Ayodhya, and other major cities across Northern India.
-        </p>
-
-        <!-- Collapsible Content -->
-        <div class="collapse" id="aboutMore">
-          <p class="feature-desc mt-3">
-            Established in 2020, S N Construction Company is a leading provider of General Contracting, Design-Build, and Construction Management services. Our headquarters are based in Ayodhya. As the company continued to grow, so did our portfolio. Our team brings deep expertise across commercial, industrial, residential, educational, religious, and civil infrastructure projects.<br /><br />
-
-            To further our commitment to the region, we opened our second office in Noida in 2020. Over the years, we have developed strong relationships with architects, engineers, and talented subcontractors across North India. These collaborations have allowed us to help our clients in meaningful ways and become a true construction partner.<br /><br />
-
-            S N Construction Company was founded on the belief that integrity and quality workmanship are the cornerstones of good business. That same belief still drives us today. We actively encourage our team to engage with and support their communities from local charities to civic initiatives, youth programs, and educational causes.<br /><br />
-
-            When you're facing a construction decision, you need professionals who will deliver your project on time, within budget, and to the highest standards. S N Construction Company is that trusted partner.<br /><br />
-
-            To learn more about how we can help with your next building project, contact us at <strong>+91-9140929007</strong>.
-          </p>
-        </div>
-
-        <!-- Toggle Button -->
-        <div class="text-center mt-3">
-          <button class="btn btn-outline-danger btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#aboutMore" aria-expanded="false" aria-controls="aboutMore" id="toggleBtn">
-            Show More
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery Section -->
-<section class="py-5" id="gallery">
-  <div class="container">
-    <h2 class="text-center mb-5 feature-title">Our Work</h2>
-    <div class="row g-4 gallery">
-      <!-- Local Image -->
-      <div class="col-md-4">
-        <img src="https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=3948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Local Construction Work" class="img-fluid shadow-sm" />
-	</div>
-	
-
-      <!-- Online Images -->
-      <div class="col-md-4">
-        <img src="https://snconstruction.in/static/media/project10.683e61638bd5d63e36cd.jpeg" alt="Construction Worker" class="img-fluid shadow-sm" />
-      </div>
-	        <div class="col-md-4">
-        <img src="https://snconstruction.in/static/media/project7.11f2414d2711507deab4.jpeg" alt="Construction Worker" class="img-fluid shadow-sm" />
-      </div>
-	  
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-light text-center text-md-start contact-section">
-  <div class="container">
-    <div class="row">
-      
-      <!-- Quick Links -->
-    <div class="col-md-12 mb-4">
-  <h5 class="text-success fw-bold mb-4 border-bottom pb-2 text-center ">Quick Links</h5>
-  <ul class="list-inline d-flex flex-wrap justify-content-evenly w-100 text-center text-md-start">
-    <li class="list-inline-item mb-2 d-flex align-items-center">
-      <img src="https://img.icons8.com/ios-filled/24/000000/home.png" class="me-2" alt="Home" />
-      <a href="#home" class="text-dark text-decoration-none fw-medium">Home</a>
-    </li>
-    <li class="list-inline-item mb-2 d-flex align-items-center">
-      <img src="https://img.icons8.com/ios-filled/24/000000/about.png" class="me-2" alt="About" />
-      <a href="#about" class="text-dark text-decoration-none fw-medium">About Us</a>
-    </li>
-    <li class="list-inline-item mb-2 d-flex align-items-center">
-      <img src="https://img.icons8.com/ios-filled/24/000000/maintenance.png" class="me-2" alt="Projects" />
-      <a href="#projects" class="text-dark text-decoration-none fw-medium">Projects</a>
-    </li>
-    <li class="list-inline-item mb-2 d-flex align-items-center">
-      <img src="https://img.icons8.com/ios-filled/24/000000/phone.png" class="me-2" alt="Contact" />
-      <a href="#contact" class="text-dark text-decoration-none fw-medium">Contact Us</a>
-    </li>
-    <li class="list-inline-item mb-2 d-flex align-items-center">
-      <img src="https://img.icons8.com/ios-filled/24/000000/privacy.png" class="me-2" alt="Privacy" />
-      <a href="#privacy" class="text-dark text-decoration-none fw-medium">Privacy Policy</a>
-    </li>
-  </ul>
-</div>
-
-
-
-      <!-- Contact Info and Map -->
+  <!-- Services Section -->
+  <section class="features py-5" id="services">
+    <div class="container">
+      <h2 class="text-center mb-5 feature-title">Our Services</h2>
       <div class="row">
-        <div class="col-md-6 mb-4">
-          <h5 class="text-success fw-bold mb-4 border-bottom pb-2">Contact Info</h5>
-          <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>CS4, Supertech Capetown, Sector 74,<br>Noida, Uttar Pradesh</p>
-
-          <p>
-            <i class="bi bi-geo-alt-fill text-danger me-2"></i>
-            <a href="https://maps.app.goo.gl/cbW6h54MRLwyMqn47" target="_blank" class="text-decoration-none text-dark fw-medium">View on Google Map</a>
-          </p>
-
-          <p><i class="bi bi-telephone-fill text-primary me-2"></i>
-            <a href="tel:+919140929007" class="text-dark text-decoration-none fw-medium">+91 9140929007</a>
-          </p>
-
-          <p><i class="bi bi-telephone-fill text-primary me-2"></i>
-            <a href="tel:+919554159614" class="text-dark text-decoration-none fw-medium">+91 9554159614</a>
-          </p>
-
-          <p><i class="bi bi-envelope-fill text-primary me-2"></i>
-            <a href="mailto:snconstructions.contact@gmail.com" class="text-dark text-decoration-none fw-medium">snconstructions.contact@gmail.com</a>
-          </p>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-house-door-fill"></i></div>
+            <h3 class="feature-title">Residential Construction</h3>
+            <p class="feature-desc">We build comfortable, modern homes tailored to your lifestyle and needs with expert
+              craftsmanship.</p>
+          </div>
         </div>
-
-        <div class="col-md-6 mb-4">
-          <h5 class="text-success fw-bold mb-4 border-bottom pb-2">Find Us on Map</h5>
-          <div class="ratio ratio-4x3 shadow rounded overflow-hidden">
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.18209130999!2d77.36838015!3d28.58396115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefffe0e6e2cf%3A0x2280fbdbeed355f1!2sSupertech%20Cape%20Town%2C%20Sector%2074%2C%20Noida%2C%20Uttar%20Pradesh%20201306!5e0!3m2!1sen!2sin!4v1717940000000" 
-              width="100%" 
-              height="100%" 
-              style="border:0;" 
-              allowfullscreen="" 
-              loading="lazy" 
-              referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-building"></i></div>
+            <h3 class="feature-title">Commercial Buildings</h3>
+            <p class="feature-desc">Delivering high-quality commercial spaces with superior design and sustainable
+              solutions.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-tools"></i></div>
+            <h3 class="feature-title">Renovations & Remodeling</h3>
+            <p class="feature-desc">Transforming existing spaces with precise remodeling and innovative upgrades.</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
+  <!-- About Section -->
+  <section class="features py-5 bg-light" id="about">
+    <div class="container">
+      <h2 class="text-center mb-5 feature-title">About Us</h2>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="feature-card">
+            <h3 class="feature-title">Our Mission</h3>
+            <p class="feature-desc">
+              To provide our clients with superior construction services that exceed expectations through quality,
+              safety, and integrity.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="feature-card">
+            <h3 class="feature-title">Our Values</h3>
+            <p class="feature-desc">
+              Commitment to Excellence, Innovation, Customer Satisfaction, and Sustainable Practices.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-5">
+        <div class="feature-card">
+          <h3 class="feature-title">Who we are?</h3>
+
+          <!-- Short Intro -->
+          <p class="feature-desc">
+            S N Construction Company Pvt. Ltd. is one of the top construction companies operating in Noida, Delhi,
+            Gurugram (Gurgaon), Lucknow, Ayodhya, and other major cities across Northern India.
+          </p>
+
+          <!-- Collapsible Content -->
+          <div class="collapse" id="aboutMore">
+            <p class="feature-desc mt-3">
+              Established in 2020, S N Construction Company is a leading provider of General Contracting, Design-Build,
+              and Construction Management services. Our headquarters are based in Ayodhya. As the company continued to
+              grow, so did our portfolio. Our team brings deep expertise across commercial, industrial, residential,
+              educational, religious, and civil infrastructure projects.<br /><br />
+
+              To further our commitment to the region, we opened our second office in Noida in 2020. Over the years, we
+              have developed strong relationships with architects, engineers, and talented subcontractors across North
+              India. These collaborations have allowed us to help our clients in meaningful ways and become a true
+              construction partner.<br /><br />
+
+              S N Construction Company was founded on the belief that integrity and quality workmanship are the
+              cornerstones of good business. That same belief still drives us today. We actively encourage our team to
+              engage with and support their communities from local charities to civic initiatives, youth programs, and
+              educational causes.<br /><br />
+
+              When you're facing a construction decision, you need professionals who will deliver your project on time,
+              within budget, and to the highest standards. S N Construction Company is that trusted partner.<br /><br />
+
+              To learn more about how we can help with your next building project, contact us at
+              <strong>+91-9140929007</strong>.
+            </p>
+          </div>
+
+          <!-- Toggle Button -->
+          <div class="text-center mt-3">
+            <button class="btn btn-outline-danger btn-sm" type="button" data-bs-toggle="collapse"
+              data-bs-target="#aboutMore" aria-expanded="false" aria-controls="aboutMore" id="toggleBtn">
+              Show More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="py-5" id="gallery">
+    <div class="container">
+      <h2 class="text-center mb-5 feature-title">Our Work</h2>
+      <div class="row g-4 gallery">
+        <!-- Local Image -->
+        <div class="col-md-4">
+          <img
+            src="https://images.unsplash.com/photo-1694521787162-5373b598945c?q=80&w=3948&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Local Construction Work" class="img-fluid shadow-sm" />
+        </div>
 
 
-<!-- Custom CSS -->
-<style>
-  .contact-section a:hover {
-    color: #198754; /* Bootstrap success */
-    text-decoration: underline;
-  }
-  .contact-section i {
-    font-size: 1.2rem;
-  }
-</style>
+        <!-- Online Images -->
+        <div class="col-md-4">
+          <img src="https://snconstruction.in/static/media/project10.683e61638bd5d63e36cd.jpeg"
+            alt="Construction Worker" class="img-fluid shadow-sm" />
+        </div>
+        <div class="col-md-4">
+          <img src="https://snconstruction.in/static/media/project7.11f2414d2711507deab4.jpeg" alt="Construction Worker"
+            class="img-fluid shadow-sm" />
+        </div>
 
-<!-- Bootstrap Icons CDN (Add in <head> if not present) -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+      </div>
+    </div>
+    </div>
+  </section>
 
-<!-- Custom CSS -->
-<style>
-  .contact-section a:hover {
-    color: #198754; /* Bootstrap success color */
-    text-decoration: underline;
-  }
-  .contact-section i {
-    font-size: 1.2rem;
-  }
-</style>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light text-center text-md-start contact-section">
+    <div class="container">
+      <div class="row">
+
+        <!-- Quick Links -->
+        <div class="col-md-12 mb-4">
+          <h5 class="text-success fw-bold mb-4 border-bottom pb-2 text-center ">Quick Links</h5>
+          <ul class="list-inline d-flex flex-wrap justify-content-evenly w-100 text-center text-md-start">
+            <li class="list-inline-item mb-2 d-flex align-items-center">
+              <img src="https://img.icons8.com/ios-filled/24/000000/home.png" class="me-2" alt="Home" />
+              <a href="#home" class="text-dark text-decoration-none fw-medium">Home</a>
+            </li>
+            <li class="list-inline-item mb-2 d-flex align-items-center">
+              <img src="https://img.icons8.com/ios-filled/24/000000/about.png" class="me-2" alt="About" />
+              <a href="#about" class="text-dark text-decoration-none fw-medium">About Us</a>
+            </li>
+            <li class="list-inline-item mb-2 d-flex align-items-center">
+              <img src="https://img.icons8.com/ios-filled/24/000000/maintenance.png" class="me-2" alt="Projects" />
+              <a href="#projects" class="text-dark text-decoration-none fw-medium">Projects</a>
+            </li>
+            <li class="list-inline-item mb-2 d-flex align-items-center">
+              <img src="https://img.icons8.com/ios-filled/24/000000/phone.png" class="me-2" alt="Contact" />
+              <a href="#contact" class="text-dark text-decoration-none fw-medium">Contact Us</a>
+            </li>
+            <li class="list-inline-item mb-2 d-flex align-items-center">
+              <img src="https://img.icons8.com/ios-filled/24/000000/privacy.png" class="me-2" alt="Privacy" />
+              <a href="#privacy" class="text-dark text-decoration-none fw-medium">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
 
 
-<!-- Footer -->
-<footer class="bg-dark text-white py-4 mt-5">
-  <div class="container text-center">
-    <p class="mb-0">&copy; 2020 <strong>S N Construction Company</strong>. All rights reserved.</p>
-    <p class="mb-0">Contact: <a href="mailto:info@snconstructs.com" class="text-white text-decoration-underline">snconstructions.contact@gmail.com</a></p>
-  </div>
-</footer>
+
+        <!-- Contact Info and Map -->
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5 class="text-success fw-bold mb-4 border-bottom pb-2">Contact Info</h5>
+            <p><i class="bi bi-geo-alt-fill text-primary me-2"></i>CS4, Supertech Capetown, Sector 74,<br>Noida, Uttar
+              Pradesh</p>
+
+            <p>
+              <i class="bi bi-geo-alt-fill text-danger me-2"></i>
+              <a href="https://maps.app.goo.gl/cbW6h54MRLwyMqn47" target="_blank"
+                class="text-decoration-none text-dark fw-medium">View on Google Map</a>
+            </p>
+
+            <p><i class="bi bi-telephone-fill text-primary me-2"></i>
+              <a href="tel:+919140929007" class="text-dark text-decoration-none fw-medium">+91 9140929007</a>
+            </p>
+
+            <p><i class="bi bi-telephone-fill text-primary me-2"></i>
+              <a href="tel:+919554159614" class="text-dark text-decoration-none fw-medium">+91 9554159614</a>
+            </p>
+
+            <p><i class="bi bi-envelope-fill text-primary me-2"></i>
+              <a href="mailto:snconstructions.contact@gmail.com"
+                class="text-dark text-decoration-none fw-medium">snconstructions.contact@gmail.com</a>
+            </p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5 class="text-success fw-bold mb-4 border-bottom pb-2">Find Us on Map</h5>
+            <div class="ratio ratio-4x3 shadow rounded overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14007.18209130999!2d77.36838015!3d28.58396115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cefffe0e6e2cf%3A0x2280fbdbeed355f1!2sSupertech%20Cape%20Town%2C%20Sector%2074%2C%20Noida%2C%20Uttar%20Pradesh%20201306!5e0!3m2!1sen!2sin!4v1717940000000"
+                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom CSS -->
+  <style>
+    .contact-section a:hover {
+      color: #198754;
+      /* Bootstrap success */
+      text-decoration: underline;
+    }
 
-<script>
-  // Optional: Change toggle button text when About More is collapsed or shown
-  const toggleBtn = document.getElementById('toggleBtn');
-  const aboutMore = document.getElementById('aboutMore');
+    .contact-section i {
+      font-size: 1.2rem;
+    }
+  </style>
 
-  aboutMore.addEventListener('shown.bs.collapse', () => {
-    toggleBtn.textContent = 'Show Less';
-  });
+  <!-- Bootstrap Icons CDN (Add in <head> if not present) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-  aboutMore.addEventListener('hidden.bs.collapse', () => {
-    toggleBtn.textContent = 'Show More';
-  });
-</script>
-<script>
-  document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
-    link.addEventListener('click', () => {
-      const navbarCollapse = document.querySelector('.navbar-collapse');
-      const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-      if (bsCollapse) {
-        bsCollapse.hide();
-      }
+  <!-- Custom CSS -->
+  <style>
+    .contact-section a:hover {
+      color: #198754;
+      /* Bootstrap success color */
+      text-decoration: underline;
+    }
+
+    .contact-section i {
+      font-size: 1.2rem;
+    }
+  </style>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p class="mb-0">&copy; 2020 <strong>S N Construction Company</strong>. All rights reserved.</p>
+      <p class="mb-0">Contact: <a href="mailto:info@snconstructs.com"
+          class="text-white text-decoration-underline">snconstructions.contact@gmail.com</a></p>
+    </div>
+  </footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // Optional: Change toggle button text when About More is collapsed or shown
+    const toggleBtn = document.getElementById('toggleBtn');
+    const aboutMore = document.getElementById('aboutMore');
+
+    aboutMore.addEventListener('shown.bs.collapse', () => {
+      toggleBtn.textContent = 'Show Less';
     });
-  });
-</script>
+
+    aboutMore.addEventListener('hidden.bs.collapse', () => {
+      toggleBtn.textContent = 'Show More';
+    });
+  </script>
+  <script>
+    document.querySelectorAll('.navbar-nav .nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
+        if (bsCollapse) {
+          bsCollapse.hide();
+        }
+      });
+    });
+  </script>
 
 </body>
+
 </html>
