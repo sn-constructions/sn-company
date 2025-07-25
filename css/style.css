@@ -199,3 +199,34 @@ footer a:hover {
   0% { transform: translateX(100%);}
   100% { transform: translateX(-100%);}
 }
+
+.company-footer {
+  background: linear-gradient(90deg, #232526 0%, #414345 100%);
+  font-size: 1rem;
+}
+.company-footer h5 {
+  color: #ffc107;
+  letter-spacing: 1px;
+}
+.company-footer a.text-white:hover,
+.company-footer a.text-white:focus {
+  color: #ffc107 !important;
+  text-decoration: underline;
+}
+.company-footer .footer-links li {
+  margin-bottom: 0.5rem;
+}
+.company-footer .bi {
+  font-size: 1.2rem;
+  vertical-align: middle;
+}
+.company-footer .mt-3 a {
+  transition: color 0.2s;
+}
+.company-footer .mt-3 a:hover {
+  color: #ffc107 !important;
+}
+.company-footer hr {
+  border-top: 1px solid #ffc107;
+  opacity: 0.5;
+}
