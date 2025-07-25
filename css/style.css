@@ -183,3 +183,19 @@ footer a:hover {
     height: 300px;
   }
 }
+
+
+/* Swiper Navigation Styles */
+.moving-banner {
+  overflow: hidden;
+  position: relative;
+}
+.banner-text {
+  display: inline-block;
+  white-space: nowrap;
+  animation: moveBanner 15s linear infinite;
+}
+@keyframes moveBanner {
+  0% { transform: translateX(100%);}
+  100% { transform: translateX(-100%);}
+}
